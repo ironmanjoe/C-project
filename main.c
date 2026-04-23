@@ -49,6 +49,9 @@ void clearBuffer(){
 //--- Map functions ---
 
 //map initialization that creates a map of dynamic size
+//I KNOW THI DOESN'T FREE THE MEMORY AFTERWARDS, THIS FUNCTION ONLY GETS CALLED ONCE
+//AND WAS JUST TO TRY AND MAKE A MAP OF DYNAMIC SIZE. THE MEMORY IS FREED AFTER THE 
+//PROGRAM FINISHES.
 Map mapInit(int w, int h){
     Map map;
     map.width = w;
